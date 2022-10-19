@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    height: 80vh;
+}
+
+legend {
+    margin: 10px 0px 10px 0px;
+}
+
+.form_container input {
+    width: 800px;
+    border: 2px solid #cecece;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.cta {
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: rgb(0, 138, 18);
+    padding: 15px 30px;
+    transition: .3s all ease;
+    border-radius: 10px;
+}
+
+.cta:hover {
+    background: rgb(0, 114, 15);
+    transition: .3s all ease;
+}
+
+@media (max-width: 868px) {
+    .form_container input {
+        width: 300px;
+        border: 2px solid #cecece;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+    }
+}

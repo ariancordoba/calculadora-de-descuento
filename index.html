@@ -4,11 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
 		<title>Calculadora de Descuento</title>
 	</head>
 	<body>
-		<h1>Calculadora de Descuento</h1>
+		<form class="form_container">
+			<legend>Monto Inicial</legend>
+			<input type="text" id="monto" name="monto_inicial" />
+			<legend>% Descuento</legend>
+			<input type="text" id="descuento" name="descuento" />
+			<legend>Importe Descontado</legend>
+			<input
+				type="text"
+				id="importe_descontado"
+				name="importe_descontado"
+				readonly="readonly"
+			/>
+			<legend>Total</legend>
+			<input type="text" id="total" name="total" readonly="readonly" />
+			<br />
+			<a href="javascript:calcular();" class="cta">Calcular</a>
+		</form>
 
-		<script src="js/app.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
