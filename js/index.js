@@ -7,6 +7,11 @@ function calcular() {
 	monto = document.getElementById("monto").value;
 	descuento = document.getElementById("descuento").value;
 
+	if (isNaN(monto, descuento)) {
+		alert("¡Solo numeros!");
+		location.reload();
+	}
+
 	imp_desc = (monto * descuento) / 100;
 
 	document.getElementById("importe_descontado").value = imp_desc;

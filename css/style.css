@@ -15,8 +15,14 @@
     height: 80vh;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
 legend {
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 .form_container input {
@@ -44,6 +50,12 @@ legend {
 }
 
 @media (max-width: 868px) {
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
     .form_container input {
         width: 300px;
         border: 2px solid #cecece;
